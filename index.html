@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-info m-5">Month Calculator</h1>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="half-width">
+                    <img src="/image/istockphoto-1055975694-612x612.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="input-section half-width">
+                    <div class="col-md-12 col-lg-10 mx-auto">
+                        <h2>Income :</h2>
+                        <div>
+                            <div class="row m-5">
+                                <div class="col-md-5 text-center">
+                                    <h5>Income :</h5>
+                                </div>
+                                <div class="col-md-7 center-item">
+                                    <div>
+                                        <input id="Monthly-income" type="text" name="" id=""
+                                            placeholder=" enter amount">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Expenses :</h2>
+                        <div>
+                            <div class="row m-3">
+                                <div class="col-md-5 text-center mx-auto">
+                                    <h5> Food :</h5>
+                                </div>
+                                <div class="col-md-7 center-item">
+                                    <div>
+                                        <input id="food-expense" type="text" name="" id="" placeholder=" enter amount">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-center mx-auto">
+                                    <h5> Rent :</h5>
+                                </div>
+                                <div class="col-md-7 center-item">
+                                    <div>
+                                        <input id="rent-expense" type="text" name="" id="" placeholder=" enter amount">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-center mx-auto">
+                                    <h5>Clothes :</h5>
+                                </div>
+                                <div class="col-md-7 center-item">
+                                    <div>
+                                        <input id="clothes-expense" type="text" name="" id=""
+                                            placeholder=" enter amount">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="calculate-btn" class="col-md-12 pt-4 pb-4">
+                            <button type="button" class="btn btn-info Calculate">Calculate</button>
+                        </div>
+                        <div class="center-item mx-auto">
+                            <h5> Total Expenses :<span id="total-expenses"> 0</span></h5>
+                            <h5> Balance :<span id="balance"> 0</span></h5>
+                        </div>
+
+                        <div class="mt-5 mb-3">
+                            <div class="row">
+                                <div class="col-md-4 text-center">
+                                    <h5>Save :</h5>
+                                </div>
+                                <div class="col-md-4">
+                                    <div>
+                                        <input id="save-percentage" type="text" name="" id=""
+                                            placeholder=" enter number">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4> % </h4>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="save-btn" type="button" class="btn btn-info Save">Save</button>
+                            </div>
+                        </div>
+                        <div class="center-item mx-auto">
+                            <h5> Saving Amount :<span id="save-amount"> 0</span></h5>
+                            <h5> Remaining Balance :<span id="remaining-balance"> 0</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
