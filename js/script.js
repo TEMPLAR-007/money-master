@@ -32,3 +32,32 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 })
 
 
+document.getElementById('save-btn').addEventListener('click', function () {
+
+    const monthlyIncome = getInputValue('Monthly-income');
+    const foodExpense = getInputValue('food-expense');
+    const rentExpense = getInputValue('rent-expense');
+    const clothesExpense = getInputValue('clothes-expense');
+    const savePercentage = getInputValue('save-percentage');
+
+    const totalExpenses = document.getElementById('total-expenses');
+
+    const totalExpense = foodExpense + rentExpense + clothesExpense;
+    totalExpenses.innerText = totalExpense;
+
+    if (savePercentage > 0) {
+        const savePercentage = getInputValue('save-percentage');
+        const savePercentageSum = (monthlyIncome * savePercentage) / 100;
+
+        const saveAmount = document.getElementById('save-amount');
+        saveAmount.innerText = savePercentageSum;
+
+        const remainingBalance = document.getElementById('remaining-balance');
+        remainingBalance.innerText = balance.innerText - savePercentageSum;
+    }
+
+    else {
+        console.log(alert('plz input valid number'));
+    }
+
+})
